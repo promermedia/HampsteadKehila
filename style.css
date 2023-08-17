@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.partition {
+  display: flex;
+  justify-content: space-between;
+}
+#shul-header {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  padding: 5px;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+}
+
+#shul-header > div {
+  padding: 10px;
+}
+
+#checkout-btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#shul-name {
+  font-size: 25px;
+}
+
+#checkout {
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(227, 255, 227);
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+  min-width: 150px;
+  margin: 0 10px;
+}
+
+#shul {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #fff;
+  border: 1px solid rgb(71, 71, 71);
+}
+
+#seats-selected {
+  font-family: arial;
+}
+
+.hechal,
+.bima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.hechal > span,
+.bima > span {
+  color: white;
+  font-size: 30px;
+}
+.bima-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hechal {
+  height: 60px;
+}
+
+.bima {
+  height: 100px;
+  width: 80%;
+}
+.men-section {
+  background-color: rgb(114 177 255);
+}
+.woman-section {
+  background-color: rgb(255 141 141);
+  border-top: 20px solid black;
+}
+
+.fa-check {
+  font-size: 30px;
+}
+
+.left-col,
+.right-col {
+  width: 35%;
+}
+.mid-col {
+  width: 30%;
+}
+.left-col-woman,
+.right-col-woman {
+  width: 50%;
+}
+
+.section-gender {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.section-gender > span {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.table-horizon {
+  display: flex;
+}
+
+.shul-table-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shul-table {
+  justify-content: space-evenly;
+  padding: 10px;
+  border: 4px dashed rgba(0, 0, 0, 0);
+  border-radius: 15px;
+}
+
+.shul-table:hover {
+  border-color: black;
+}
+.seat {
+  cursor: pointer;
+  margin: 5px 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgb(177, 255, 177);
+  border: 2px dotted rgba(0, 0, 0, 0);
+}
+
+.seat:hover:not(.taken) {
+  border-color: black;
+  background-color: rgb(134, 255, 134);
+}
+
+.taken {
+  background-color: rgb(255, 138, 138);
+  cursor: not-allowed;
+}

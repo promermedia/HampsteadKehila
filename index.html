@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+<script src="main.js" defer></script>
+    <title>Hampstead Kehila 5784</title>
+  </head>
+  <body>
+    <div id="shul-main">
+      <div id="shul-header">
+        <div><h1 id="shul-name">Hampstead Kehila 5784</h1></div>
+        <div id="checkout-btn-container">
+          <p>
+            <b>sièges sélectionnées :</b>
+            <i id="seats-selected"
+              >Vous n'avez pas encore sélectionné de sièges.</i
+            >
+          </p>
+          <button id="checkout">
+            réserver &nbsp;&nbsp;<i class="fa-solid fa-angles-right"></i>
+          </button>
+        </div>
+      </div>
+      <div id="shul">
+        <section class="men-section">
+          <div class="partition front-part">
+            <div class="column left-col">
+              <div class="shul-table table-horizon" table="A">
+                <div class="seat" seat="10"></div>
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+              </div>
+            </div>
+            <div class="column mid-col">
+              <div class="hechal"><span>Hechal</span></div>
+            </div>
+            <div class="column right-col">
+              <div class="shul-table table-horizon" table="A">
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="partition middle-part">
+            <div class="column left-col">
+              <div class="shul-table-row">
+                <div class="shul-table table-vertical" table="I">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+                <div class="shul-table table-vertical" table="H">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+                <div class="shul-table table-vertical" table="G">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+                <div class="shul-table table-vertical" table="F">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+              </div>
+              <div class="shul-table-row">
+                <div class="shul-table table-vertical" table="I">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+                <div class="shul-table table-vertical" table="H">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+                <div class="shul-table table-vertical" table="G">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+                <div class="shul-table table-vertical" table="F">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+              </div>
+              <div class="shul-table-row">
+                <div class="shul-table table-vertical" table="I">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+                <div class="shul-table table-vertical" table="H">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+                <div class="shul-table table-vertical" table="G">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+                <div class="shul-table table-vertical" table="F">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+              </div>
+            </div>
+            <div class="column mid-col bima-cont">
+              <div class="bima"><span>Bima</span></div>
+            </div>
+            <div class="column right-col">
+              <div class="shul-table-row">
+                <div class="shul-table table-vertical" table="B">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+                <div class="shul-table table-vertical" table="C">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+                <div class="shul-table table-vertical" table="D">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+                <div class="shul-table table-vertical" table="E">
+                  <div class="seat" seat="1"></div>
+                  <div class="seat" seat="2"></div>
+                  <div class="seat" seat="3"></div>
+                  <div class="seat" seat="4"></div>
+                  <div class="seat" seat="5"></div>
+                </div>
+              </div>
+              <div class="shul-table-row">
+                <div class="shul-table table-vertical" table="B">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+                <div class="shul-table table-vertical" table="C">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+                <div class="shul-table table-vertical" table="D">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+                <div class="shul-table table-vertical" table="E">
+                  <div class="seat" seat="6"></div>
+                  <div class="seat" seat="7"></div>
+                  <div class="seat" seat="8"></div>
+                  <div class="seat" seat="9"></div>
+                  <div class="seat" seat="10"></div>
+                </div>
+              </div>
+              <div class="shul-table-row">
+                <div class="shul-table table-vertical" table="B">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+                <div class="shul-table table-vertical" table="C">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+                <div class="shul-table table-vertical" table="D">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+                <div class="shul-table table-vertical" table="E">
+                  <div class="seat" seat="11"></div>
+                  <div class="seat" seat="12"></div>
+                  <div class="seat" seat="13"></div>
+                  <div class="seat" seat="14"></div>
+                  <div class="seat" seat="15"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="partition rear-part">
+            <div class="column left-col">
+              <div class="shul-table table-horizon" table="J">
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+              </div>
+              <div class="shul-table table-horizon" table="K">
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+              </div>
+            </div>
+            <div class="column mid-col">
+              <div class="shul-table table-horizon" table="J">
+                <div class="seat" seat="10"></div>
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+              </div>
+              <div class="shul-table table-horizon" table="K">
+                <div class="seat" seat="10"></div>
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+              </div>
+            </div>
+            <div class="column right-col">
+              <div class="shul-table table-horizon" table="J">
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+              <div class="shul-table table-horizon" table="K">
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+            </div>
+          </div>
+          <p class="section-gender"><i class="fa-solid fa-turn-down fa-rotate-180">
+          </i><span>HOMMES</span><i class="fa-solid fa-turn-up"></i></p>
+        </section>
+        <section class="woman-section">
+          <p class="section-gender"><i class="fa-solid fa-turn-up fa-rotate-180">
+          </i><span>FEMMES</span><i class="fa-solid fa-turn-down"></i></p>
+          <div class="partition front-part">
+            <div class="column left-col-woman">
+              <div class="shul-table table-horizon" table="L">
+                <div class="seat" seat="18"></div>
+                <div class="seat" seat="17"></div>
+                <div class="seat" seat="16"></div>
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+                <div class="seat" seat="10"></div>
+              </div>
+              <div class="shul-table table-horizon" table="M">
+               <div class="seat" seat="18"></div>
+                <div class="seat" seat="17"></div>
+                <div class="seat" seat="16"></div>
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+                <div class="seat" seat="10"></div>
+              </div>
+              <div class="shul-table table-horizon" table="N">
+                <div class="seat" seat="18"></div>
+                <div class="seat" seat="17"></div>
+                <div class="seat" seat="16"></div>
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+                <div class="seat" seat="10"></div>
+              </div>
+              <div class="shul-table table-horizon" table="O">
+               <div class="seat" seat="18"></div>
+                <div class="seat" seat="17"></div>
+                <div class="seat" seat="16"></div>
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+                <div class="seat" seat="10"></div>
+              </div>
+              <div class="shul-table table-horizon" table="P">
+               <div class="seat" seat="18"></div>
+                <div class="seat" seat="17"></div>
+                <div class="seat" seat="16"></div>
+                <div class="seat" seat="15"></div>
+                <div class="seat" seat="14"></div>
+                <div class="seat" seat="13"></div>
+                <div class="seat" seat="12"></div>
+                <div class="seat" seat="11"></div>
+                <div class="seat" seat="10"></div>
+              </div>
+            </div>
+
+            <div class="column right-col-woman">
+              <div class="shul-table table-horizon" table="L">
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+              <div class="shul-table table-horizon" table="M">
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+              <div class="shul-table table-horizon" table="N">
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+              <div class="shul-table table-horizon" table="O">
+               <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+              <div class="shul-table table-horizon" table="P">
+                <div class="seat" seat="9"></div>
+                <div class="seat" seat="8"></div>
+                <div class="seat" seat="7"></div>
+                <div class="seat" seat="6"></div>
+                <div class="seat" seat="5"></div>
+                <div class="seat" seat="4"></div>
+                <div class="seat" seat="3"></div>
+                <div class="seat" seat="2"></div>
+                <div class="seat" seat="1"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
