@@ -6,6 +6,12 @@
   font-family: "Raleway", sans-serif;
 }
 
+#admin-lock,
+#admin-print {
+  color: #26a69a;
+  margin: 0 10px;
+}
+
 .partition {
   display: flex;
   justify-content: space-between;
@@ -16,7 +22,7 @@
   background-color: #fff;
   padding: 5px;
   flex-wrap: wrap;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
 }
 
@@ -31,18 +37,12 @@
 }
 
 #shul-name {
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-#checkout {
-  text-align: center;
+#reserve-now {
   cursor: pointer;
-  background-color: rgb(227, 255, 227);
-  border-radius: 10px;
-  font-size: 15px;
-  padding: 10px;
-  font-weight: bold;
-  display: block;
   min-width: 150px;
   margin: 0 10px;
 }
@@ -54,44 +54,68 @@
   border: 1px solid rgb(71, 71, 71);
 }
 
-#seats-selected {
+#seats-selected,
+#amount-to-pay {
   font-family: arial;
+}
+
+.bima {
+  position: relative;
+  bottom: -180px;
+}
+
+.bima-cont {
+  padding: 20px;
 }
 
 .hechal,
 .bima {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: black;
+  border: solid 5px white;
+  height: 170px;
+  width: 100%;
 }
-.hechal > span,
-.bima > span {
+
+.span-in-hechal-bima {
   color: white;
   font-size: 30px;
 }
-.bima-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hechal {
-  height: 60px;
-}
 
-.bima {
-  height: 100px;
-  width: 80%;
-}
 .men-section {
-  background-color: rgb(114 177 255);
+  background-color: rgb(40 60 85);
 }
 .woman-section {
-  background-color: rgb(255 141 141);
+  background-color: rgb(191 106 106);
   border-top: 20px solid black;
 }
 
-.fa-check {
+.print .seat {
+  background-color: rgb(227, 227, 227) !important;
+  border: 1px solid black;
+}
+
+.print section,
+.print .taken,
+.print .small-names {
+  background-color: white !important;
+}
+
+.print .span-in-hechal-bima {
+  color: black;
+}
+
+.print .row-letter {
+  color: black;
+}
+
+.print .hechal,
+.print .bima {
+  border: solid 5px black;
+}
+
+.fa-check,
+.fa-x {
   font-size: 30px;
 }
 
@@ -99,9 +123,11 @@
 .right-col {
   width: 35%;
 }
+
 .mid-col {
   width: 30%;
 }
+
 .left-col-woman,
 .right-col-woman {
   width: 50%;
@@ -130,29 +156,82 @@
 .shul-table {
   justify-content: space-evenly;
   padding: 10px;
-  border: 4px dashed rgba(0, 0, 0, 0);
   border-radius: 15px;
 }
 
-.shul-table:hover {
-  border-color: black;
-}
 .seat {
   cursor: pointer;
   margin: 5px 0;
   width: 30px;
   height: 30px;
-  border-radius: 10px;
   background-color: rgb(177, 255, 177);
-  border: 2px dotted rgba(0, 0, 0, 0);
 }
 
 .seat:hover:not(.taken) {
-  border-color: black;
-  background-color: rgb(134, 255, 134);
+  background-color: rgb(5, 255, 5);
 }
 
 .taken {
-  background-color: rgb(255, 138, 138);
+  background-color: rgb(0 141 238);
   cursor: not-allowed;
+}
+
+.unpaid {
+  background-color: rgb(255 137 37);
+  cursor: not-allowed;
+}
+
+.small-names {
+  font-size: 8px;
+  text-align: left;
+  line-height: 1;
+  font-weight: bold;
+  width: min-content;
+  padding: 2px;
+}
+
+.admin-area h2 {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.admin-area {
+  min-height: 100vh;
+}
+
+select:not(.for-form) {
+  display: inline-block !important;
+}
+
+#container-all-seats-reserved {
+  width: 500px;
+  margin: 0 auto;
+}
+
+div[inop="1"] {
+  visibility: hidden;
+}
+
+.admin {
+  cursor: alias;
+}
+
+.row-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 30px;
+  margin: 5px 0;
+  height: 30px;
+}
+
+.row-letter-cont-horizon {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.row-letter-cont-vertical {
+  padding-left: 0;
+  padding-right: 0;
 }

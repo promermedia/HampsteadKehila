@@ -1,0 +1,122 @@
+#swal-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#swal-cont {
+  position: relative;
+  z-index: 999;
+  background-color: white;
+  border-radius: 25px 25px 25px 25px;
+  margin: 40px auto;
+  max-height: 90vh;
+  min-height: 60vh;
+
+  overflow-y: auto;
+  width: 340px;
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.swal-btns {
+  flex-grow: 1;
+  text-align: center;
+  padding: 15px;
+  border: none;
+  font-size: 25px !important;
+  cursor: pointer;
+}
+
+.swal-btns:hover {
+  border: 2px rgb(0, 0, 0) solid;
+  font-weight: bold;
+  color: white;
+}
+
+.swal-btn-cont {
+  text-align: center;
+  margin: 10px;
+  display: flex;
+}
+
+.swal-title {
+  text-align: center;
+  font-size: 35px !important;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.swal-text {
+  text-align: center;
+  font-size: 20px !important;
+  margin: 15px;
+}
+
+.swal-text > p {
+  margin: 0px;
+  text-align: left;
+}
+
+.swal-input {
+  width: 80%;
+  padding: 5px 15px;
+  margin: 10px;
+  font-size: 20px !important;
+  border-radius: 25px;
+  border: 1px solid grey;
+}
+
+.swal-content-cont {
+  text-align: center;
+  padding: 15px;
+}
+
+/* .swal-input:focus {
+  outline: none;
+} */
+
+.swal-cancel-btn {
+  background-color: rgb(138, 138, 138);
+}
+.swal-ok-btn {
+  background-color: rgb(1, 214, 1);
+}
+.swal-prev-btn {
+  background-color: rgb(1, 164, 214);
+}
+
+.option-with-images {
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  padding-left: 30px;
+}
+
+.error-field {
+  color: red;
+  font-style: italic;
+  margin-top: 0;
+  text-align: left;
+}
+
+.for-form-cont:has(> .inline-block) {
+  display: inline-block;
+  width: 40%;
+  margin: 0 10px 10px;
+}
+
+.swal-text-block {
+  margin-bottom:0;
+  text-align: left;
+}
+
+.select-dropdown {
+top:0 !important
+}
